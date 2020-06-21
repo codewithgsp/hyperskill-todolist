@@ -17,3 +17,8 @@ print('max:', max_key)
 
 print("min: {0}".format(min(test_dict, key=test_dict.get)))
 print("max: {0}".format(max(test_dict, key=test_dict.get)))
+
+d = {"a": 43, "b": 1233, "c": 8}
+d_val = list(d.values())
+print(list(d.keys())[d_val.index(8)])
+
