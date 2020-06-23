@@ -1,8 +1,8 @@
 <h2>Description</h2>
 
-<p>Everyday, we’re surrounded by thousands of small distractions, facts, and bits of odd information. When you’re on a deadline, you don’t have time for all this fluff. You need to focus on the task at hand, so you can’t afford to spend hours on Pinterest, chatting at the water cooler with your coworkers, or watching re-runs on TV. At this point in time, the deadline takes precedence.</p>
+<p>Everyday, we’re surrounded by thousands of small distractions, facts, and bits of odd information. When you’re on a deadline, you don’t have time for all this fluff. You need to focus on the task at hand, so you can’t afford to spend hours on Pinterest, chatting at the water cooler with your coworkers, or watching re-runs on TV. At this point in time, the deadline takes precedence.</p>
 
-<p>So let's add the ability to set deadlines to our tasks. Python <code class="language-python">datetime</code> module will help us to work with dates.</p>
+<p>So let's add the ability to set deadlines to our tasks. Python <code class="language-python">datetime</code> module will help us to work with dates.</p>
 
 <p>Here are some methods that might help you:</p>
 
@@ -23,7 +23,7 @@ today.weekday() # return the day of the week as an integer, where Monday is 0 an
 yesterday = today - timedelta(days=1) # a timedelta object represents a duration, the difference between two dates or times.
 day_after_tomorrow = today + timedelta(days=2)</code></pre>
 
-<p>To select rows from the table with some condition, you can use <code class="language-python">filter()</code> method that accepts the condition by which to select rows:</p>
+<p>To select rows from the table with some condition, you can use <code class="language-python">filter()</code> method that accepts the condition by which to select rows:</p>
 
 <pre><code class="language-python">from datetime import datetime
 
@@ -41,15 +41,15 @@ rows = session.query(Table).filter(Table.date == today).all()</code></pre>
 	<li><strong>All tasks</strong>: prints all tasks sorted by deadline.</li>
 </ul>
 
-<p>Now <strong>Add task</strong> item should ask for the deadline of the task. Users should input the deadline in this format: <strong>YYYY-MM-DD</strong>.</p>
+<p>Now <strong>Add task</strong> item should ask for the deadline of the task. Users should input the deadline in this format: <strong>YYYY-MM-DD</strong>.</p>
 
-<p>Also, <strong>Today's tasks </strong>item should print today's date.</p>
+<p>Also, <strong>Today's tasks </strong>item should print today's date.</p>
 
-<p>See the format of the output in the example.</p>
+<p>See the format of the output in the example.</p>
 
 <h2>Example</h2>
 
-<p>The greater-than symbol followed by space (<code class="language-python">&gt; </code>) represents the user input. Notice that it's not the part of the input.</p>
+<p>The greater-than symbol followed by space (<code class="language-python">&gt; </code>) represents the user input. Notice that it's not the part of the input.</p>
 
 <p><strong>Output:</strong></p>
 
